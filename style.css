@@ -133,9 +133,9 @@
         font-size: 27px;
     }
 
-    /* .hero__section_container_input img{
+    .hero__section_container_input img{
         display: none;
-    } */
+    }
 
     .input_location,
     .input_search {
