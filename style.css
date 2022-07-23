@@ -78,7 +78,7 @@
 
 .hero__section_container_input img {
     width: 20px;
-    display: flex;
+    /* display: flex; */
 }
 
 .input_location,
