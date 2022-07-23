@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero__section {
+    background: url(./images/heroSectionBackground.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    min-height: 65vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    height: 60px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar__menu_container {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar__menu_container a:hover {
+    color: yellow;
+    transition: ease-in 0.5s;
+}
+
+.navbar__menu_container .user__icon {
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.hero__section_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(65vh - 60px);
+    gap: 32px;
+}
+
+.hero__section_logo {
+    width: 300px;
+}
+
+.hero___section_container_title {
+    text-align: center;
+    font-weight: 380;
+    font-size: 35px;
+}
+
+.hero__section_container_input {
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__section_container_input img {
+    width: 20px;
+    display: flex;
+}
+
+.input_location,
+.input_search {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+.input_location {
+    width: 32%;
+    border-right: 1px solid #e0e0e0;
+}
+
+.input_search {
+    width: 68%;
+}
+
+@media only screen and (max-width:600px) {
+    .navbar__menu_container .link {
+        display: none;
+    }
+
+    .navbar__menu_container .user__icon {
+        display: flex;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .hero__section {
+        min-height: 80vh;
+    }
+
+    .hero__section_container {
+        height: (80vh - 60px);
+    }
+
+    .hero__section_container_input {
+        flex-direction: column;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .hero__section_logo{
+        width: 200px;
+    }
+
+    .hero___section_container_title {
+        font-weight: 300;
+        font-size: 27px;
+    }
+
+    /* .hero__section_container_input img{
+        display: none;
+    } */
+
+    .input_location,
+    .input_search {
+        padding: 15px;
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    .input_location{
+        border-right: none;
+    }
+}
